@@ -7,16 +7,23 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './header/header.component';
+
+import {MdToolbar, MdToolbarRow} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    MdToolbar,
+    MdToolbarRow,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CoreModule
+    CoreModule,
   ],
   exports: [
     AppComponent,
